@@ -1,0 +1,26 @@
+{
+  "name": "cluedobot",
+  "version": "1.0.0",
+  "description": "Bringing the classic 'Whodunnit?' game to Discord!",
+  "main": "boot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RokettoJanpu/CluedoBot.git"
+  },
+  "author": "RokettoJanpu, EmilyPerrimon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RokettoJanpu/CluedoBot/issues"
+  },
+  "homepage": "https://github.com/RokettoJanpu/CluedoBot#readme",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "discord.js": "^11.4.2",
+    "opusscript": "0.0.6"
+  }
+}
