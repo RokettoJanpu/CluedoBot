@@ -1,8 +1,17 @@
 const fs = require(`fs`);
 const Discord = require(`discord.js`);
 
-// Grabs the command prefix and tokens from config.json
-const {prefix, botToken, giphyKey} = require(`./config.json`);
+/**Grabs the command prefix and tokens from config.json
+ * Determines whether CluedoBot is deployed via online apps or locally. 
+ * Don't pay this too much attention if you're not the author. */
+
+if(process.env.PREFIX != undefined){
+	var prefix = process.env.PREFIX, botToken = process.env.BOT_TOKEN, giphyKey = process.env.GIPHY_KEY;
+}else{
+	var {prefix, botToken, giphyKey} = require(`./config.json`);
+}
+
+// Logs in CluedoBot.
 const bot = new Discord.Client();								
 bot.login(botToken);
 
@@ -23,7 +32,7 @@ var args, cmd, mentions, query, queryString, atUser, user, toUser;
 
 // Logs this message to the console when CluedoBot boots up.
 bot.once(`ready`, () => {
-	console.log(`A murder, you say? I do declare!`); 
+	console.log(`Now witness the firepower of this fully armed and operational Discord Bot!`); 
 })
 
 // Runs this block whenever CluedoBot sees a new message.
