@@ -1,0 +1,5 @@
+{
+	"prefix": "someCommandPrefix",
+	"botToken": "yourDiscordBotToken",
+	"giphyKey": "yourGiphyAPIKey"
+}
