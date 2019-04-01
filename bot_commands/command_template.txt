@@ -1,0 +1,17 @@
+// DO NOT EDIT THIS TEXT FILE IN ANY WAY. THIS IS MEANT TO BE A TEMPLATE FOR WRITING BOT COMMANDS.
+// Remember that each bot command file should have the .js file extension.
+
+module.exports = {
+	name: `Enter the command name in lowercase without the prefix.`,
+	description: `Enter your command description here. Feel free to be funny if you like.`,
+	execute(message, user, atUser, toUser, query, queryString, args, mentions){
+        	
+		// Go wild with your code...
+		botResponse = ``;
+		message.channel.send(botResponse);
+		
+		// But keep in mind to assign SOMETHING, if not the bot response, to the logResponse variable at the end.
+		// The bot should always log to the console so we know what's going on.
+		logResponse = botResponse;
+	},
+};
