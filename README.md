@@ -1,2 +1,2 @@
 # CluedoBot
-A murder, you say? I do declare!
+Bringing the classic "Whodunnit?" game to Discord!
