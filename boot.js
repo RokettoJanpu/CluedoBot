@@ -32,7 +32,7 @@ var args, cmd, mentions, query, queryString, atUser, user, toUser;
 
 // Logs this message to the console when CluedoBot boots up.
 bot.once(`ready`, () => {
-	console.log(`Now witness the firepower of this fully armed and operational Discord Bot!`); 
+	console.log(`A murder, you say? I do declare!`); 
 })
 
 // Runs this block whenever CluedoBot sees a new message.
