@@ -7,7 +7,7 @@ module.exports = {
 	execute(message, user, atUser, toUser, query, queryString, args, mentions){
         	
 		// Go wild with your code...
-		botResponse = ``;
+		botResponse = `Hasta la vista, baby!`;
 		message.channel.send(botResponse);
 		
 		// But keep in mind to assign SOMETHING, if not the bot response, to the logResponse variable at the end.
