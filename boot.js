@@ -32,6 +32,7 @@ var args, cmd, mentions, query, queryString, atUser, user, toUser, botResponse, 
 
 // Logs this message to the console when CluedoBot boots up.
 bot.once(`ready`, () => {
+	bot.user.setGame(`with knives!`);
 	console.log(`A murder, you say? I do declare!`); 
 })
 
