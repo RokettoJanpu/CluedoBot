@@ -17,7 +17,7 @@ bot.login(botToken);
 
 // Interfaces with Giphy's API.
 var giphyAPIClient = require(`giphy-js-sdk-core`);
-giphy = giphyAPIClient(giphyKey);
+var giphy = giphyAPIClient(giphyKey);
 
 // Loops through the commands file and adds each command to the bot.
 bot.commands = new Discord.Collection();
