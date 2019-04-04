@@ -28,7 +28,7 @@ for (const file of commandFiles) {
 }
 
 // Initializes some variables. To be explained further below.
-var args, cmd, mentions, query, queryString, atUser, user, toUser;
+var args, cmd, mentions, query, queryString, atUser, user, toUser, botResponse, logResponse;
 
 // Logs this message to the console when CluedoBot boots up.
 bot.once(`ready`, () => {
