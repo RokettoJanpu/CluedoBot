@@ -1,9 +1,13 @@
 const fs = require(`fs`);
 const Discord = require(`discord.js`);
 
-/**Grabs the command prefix and tokens from config.json
- * Determines whether CluedoBot is deployed via online apps or locally. 
- * Don't pay this too much attention if you're not the author. */
+/**
+ * Don't pay this too much attention if you're not one of the code authors.
+ * Determines whether CluedoBot is deployed via online apps or locally.
+ * It allows us to easily switch between running the bot locally and having an online app run it run 24/7
+ * If it runs locally, it grabs the necessary tokens from config.json
+ * If it runs via online app, it grabs the tokens from the process environment.
+ */
 
 if(process.env.PREFIX != undefined){
 	var prefix = process.env.PREFIX, botToken = process.env.BOT_TOKEN, giphyKey = process.env.GIPHY_KEY;
